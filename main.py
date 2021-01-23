@@ -2,8 +2,8 @@ import tkinter
 
 window = tkinter.Tk()
 window.title('Mile to Km converter')
-window.minsize(width=300, height=200)
-window.config(padx=50, pady=50)
+#window.minsize(width=300, height=200)
+window.config(padx=20, pady=20)
 
 
 def convert():
@@ -20,7 +20,7 @@ equal_label = tkinter.Label(text='is equal to')
 equal_label.grid(column=0, row=1)
 cal_button = tkinter.Button(text='Calculate', command=convert)
 cal_button.grid(column=1, row=2)
-entry = tkinter.Entry()
+entry = tkinter.Entry(justify='center')
 entry.insert(tkinter.END, string='enter the miles')
 entry.focus()
 entry.grid(column=1, row=0)
